@@ -49,6 +49,20 @@ class BerlinClockKata
         return $reponse;
     }
 
+    public function per5hours(int $hours): string
+    {
+        $block5Hours = $hours / 5;
+        $reponse = "";
+        for ($i = 1; $i <= 4; $i++) {
+            if ($i <= $block5Hours) {
+                $reponse .= "R";
+            } else if ($i > $block5Hours) {
+                $reponse .= "O";
+            }
+        }
+        return $reponse;
+    }
+
 
 
 }
