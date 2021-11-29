@@ -150,4 +150,10 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals("ROOO", $actual);
     }
 
+    public function test_per5hours_given10_shouldReturnRROO()
+    {
+        $actual = $this->berlinClockKata->per5hours(10);
+        $this->assertEquals("RROO", $actual);
+    }
+
 }
