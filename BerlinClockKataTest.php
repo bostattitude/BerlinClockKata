@@ -1,7 +1,7 @@
 <?php
 
 
-require "vendor/autoload.php";
+//require "vendor/autoload.php";
 require "BerlinClockKata.php";
 
 use BerlinClockKata\BerlinClockKata;
@@ -43,6 +43,9 @@ class BerlinClockKataTest extends TestCase
         $actual = $this->berlinClockKata->simpleMinutes(4);
         $this->assertEquals("YYYY", $actual);
     }
+
+
+
 
 
 
