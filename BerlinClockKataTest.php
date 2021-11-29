@@ -93,22 +93,10 @@ class BerlinClockKataTest extends TestCase
         $actual = $this->berlinClockKata->per5minutes(40);
         $this->assertEquals("YYRYYRYYOOO", $actual);
     }
-
     public function test_per5minutes_given45_shouldReturnYYRYYRYYROO()
     {
         $actual = $this->berlinClockKata->per5minutes(45);
         $this->assertEquals("YYRYYRYYROO", $actual);
-    }
-    public function test_per5minutes_given50_shouldReturnYYRYYRYYRYO()
-    {
-        $actual = $this->berlinClockKata->per5minutes(50);
-        $this->assertEquals("YYRYYRYYRYO", $actual);
-    }
-
-    public function test_per5minutes_given55_shouldReturnYYRYYRYYRYY()
-    {
-        $actual = $this->berlinClockKata->per5minutes(55);
-        $this->assertEquals("YYRYYRYYRYY", $actual);
     }
 
     //TEST Simle Hours
@@ -167,5 +155,7 @@ class BerlinClockKataTest extends TestCase
         $actual = $this->berlinClockKata->per5hours(20);
         $this->assertEquals("RRRR", $actual);
     }
+
+
 
 }

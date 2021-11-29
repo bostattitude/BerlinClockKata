@@ -63,6 +63,15 @@ class BerlinClockKata
         return $reponse;
     }
 
+    public function simpleSecondes(int $seconds): string
+    {
+        if ($seconds % 2 == 0) {
+            return "R";
+        } else {
+            return "O";
+        }
+    }
+
 
 
 }
