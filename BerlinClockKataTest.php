@@ -124,4 +124,10 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals("ROOO", $actual);
     }
 
+    public function test_simpleHours_given2_shouldReturnRROO()
+    {
+        $actual = $this->berlinClockKata->simpleHours(2);
+        $this->assertEquals("RROO", $actual);
+    }
+
 }
