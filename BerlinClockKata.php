@@ -72,6 +72,21 @@ class BerlinClockKata
         }
     }
 
+    public function BerlinClock(string $hours, string $minutes, string $seconds): string
+    {
+
+        $berlinclock = "";
+
+        $berlinclock = $berlinclock . $this->simpleSecondes($seconds) . "\n";
+        $berlinclock = $berlinclock . $this->per5hours($hours) . "\n";
+        $berlinclock = $berlinclock . $this->simpleHours($hours) . "\n";
+        $berlinclock = $berlinclock . $this->per5minutes($minutes) . "\n";
+        $berlinclock = $berlinclock . $this->simpleMinutes($minutes) . "\n";
+
+        return $berlinclock;
+
+    }
+
 
 
 }
