@@ -171,7 +171,16 @@ class BerlinClockKataTest extends TestCase
         $this->assertEquals("O", $actual);
     }
 
+    // FINAL TEST BerlinClock
 
+
+    public function test_berlinClock_given18h40min38s_shouldReturnR_RRRO_RRRO_YYRYYRYYOOO_OOOO()
+    {
+
+        $actual = $this->berlinClockKata->berlinClock(18, 40, 38);
+        $this->assertEquals("R\nRRRO\nRRRO\nYYRYYRYYOOO\nOOOO\n", $actual);
+
+    }
 
 
 }
