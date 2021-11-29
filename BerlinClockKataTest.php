@@ -18,6 +18,8 @@ class BerlinClockKataTest extends TestCase
         $this->berlinClockKata = new BerlinClockKata();
     }
 
+    //TEST FOR Simple Minutes
+
     public function test_simpleMinutes_given1_ShouldReturnYOOO()
     {
         $actual = $this->berlinClockKata->simpleMinutes(1);
@@ -29,5 +31,13 @@ class BerlinClockKataTest extends TestCase
         $actual = $this->berlinClockKata->simpleMinutes(2);
         $this->assertEquals("YYOO", $actual);
     }
+
+    public function test_simpleMinutes_given3_shouldReturnYYYO()
+    {
+        $actual = $this->berlinClockKata->simpleMinutes(3);
+        $this->assertEquals("YYYO", $actual);
+    }
+
+
 
 }
